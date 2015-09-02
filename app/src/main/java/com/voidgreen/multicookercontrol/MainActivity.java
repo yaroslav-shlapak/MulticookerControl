@@ -1,25 +1,21 @@
 package com.voidgreen.multicookercontrol;
 
-import java.io.IOException;
-import java.io.OutputStream;
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-import java.util.UUID;
-
 import android.app.Activity;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothSocket;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Vibrator;
 import android.util.Log;
 import android.view.Menu;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.Toast;
-import android.widget.ToggleButton;
-import android.os.Vibrator;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.UUID;
 
 public class MainActivity extends Activity implements View.OnClickListener {
 
@@ -86,12 +82,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         } catch (IllegalArgumentException e) {
             Log.d("BLUETOOTH", e.getMessage());
-
         }
-
         //Выводим сообщение об успешном подключении
         Toast.makeText(getApplicationContext(), "CONNECTED", Toast.LENGTH_LONG).show();
-
     }
 
     @Override
