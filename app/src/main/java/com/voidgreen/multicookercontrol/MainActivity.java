@@ -64,7 +64,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
             //Адрес опредеяется следующим образом: установите соединение
             //между ПК и модулем (пин: 1234), а затем посмотрите в настройках
             //соединения адрес модуля. Скорее всего он будет аналогичным.
-            BluetoothDevice device = bluetooth.getRemoteDevice("98:D3:31:30:18:59");
+            BluetoothDevice device = bluetooth.getRemoteDevice("20:15:04:07:13:52");
 
             //Инициируем соединение с устройством
             //  Method m = device.getClass().getMethod(
